@@ -233,6 +233,18 @@
       .gallery-grid .g-tall { grid-row: span 1; }
     }
 
+    .reviews-section { background: var(--dark); }
+    .reviews-section .section-label { color: var(--amber); }
+    .reviews-section .section-title { color: var(--white); }
+    .reviews-section .section-sub { color: rgba(255,255,255,0.65); }
+    .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+    .review-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 12px; padding: 28px 24px; }
+    .review-stars { color: #f59e0b; font-size: 1rem; letter-spacing: 2px; margin-bottom: 14px; }
+    .review-text { font-size: 0.92rem; color: rgba(255,255,255,0.80); line-height: 1.65; margin-bottom: 16px; font-style: italic; }
+    .reviewer { font-weight: 700; color: var(--white); font-size: 0.88rem; }
+    .reviewer span { color: rgba(255,255,255,0.5); font-weight: 400; }
+    .reviewer .google-icon { width: 14px; height: 14px; display: inline-block; vertical-align: -2px; margin-right: 4px; }
+
     .faq-list { display: flex; flex-direction: column; gap: 16px; max-width: 800px; }
     .faq-item { background: var(--gray); border-radius: 10px; overflow: hidden; }
     .faq-q { width: 100%; background: none; border: none; padding: 20px 24px; text-align: left; font-size: 1rem; font-weight: 700; color: var(--dark); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
@@ -500,6 +512,31 @@
       <div class="gallery-item"><img src="images/istockphoto-187997685-612x612.jpg" alt="New carpet in home Macomb Michigan" loading="lazy" width="612" height="220" /></div>
       <div class="gallery-item"><img src="images/360_F_218970417_HqekNsoEJHkbN14V89RKagpY4sY2V6dd.jpg" alt="Laminate flooring Macomb MI" loading="lazy" width="612" height="220" /></div>
       <div class="gallery-item"><img src="images/istockphoto-843124004-612x612.jpg" alt="Tile floor installation Macomb Michigan" loading="lazy" width="612" height="220" /></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews-section">
+  <div class="section-inner">
+    <p class="section-label">Customer Reviews</p>
+    <h2 class="section-title">What Our Customers Are Saying</h2>
+    <p class="section-sub">Real feedback from real Macomb County homeowners and business owners.</p>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Macomb Flooring Mart came out to our home and brought so many samples we had a hard time choosing! The whole process was easy — they measured, gave us a fair quote, and the installers were done in one day. Our new carpet looks amazing."</p>
+        <div class="reviewer">Jennifer M. <span>— <img src="images/google-icon-logo-svgrepo-com.svg" alt="Google" class="google-icon" /> Google Review</span></div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"We replaced all the flooring in our house — carpet in the bedrooms and hardwood in the living areas. Macomb Flooring Mart handled everything. Pricing was honest, the crew was professional, and the results are better than we imagined. Highly recommend."</p>
+        <div class="reviewer">David R. <span>— <img src="images/google-icon-logo-svgrepo-com.svg" alt="Google" class="google-icon" /> Google Review</span></div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"I love that they bring everything to your home. No driving to a store and trying to picture how it looks — you can see it right in your room. The flooring we picked is perfect and the installation was fast and clean. Will use again for our basement."</p>
+        <div class="reviewer">Linda K. <span>— <img src="images/google-icon-logo-svgrepo-com.svg" alt="Google" class="google-icon" /> Google Review</span></div>
+      </div>
     </div>
   </div>
 </section>
